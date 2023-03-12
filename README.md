@@ -14,7 +14,7 @@
 - Single Activity
 - Navigation Component
 
-<h2>everything was done clearly according to the terms of reference and layout from Figma<h2>
+<h2>Everything was done clearly according to the terms of reference and layout from Figma<h2>
 <h2>Scrrenshots:<h2>
   
   <h3> Login - Sign up - Profile<h3>
