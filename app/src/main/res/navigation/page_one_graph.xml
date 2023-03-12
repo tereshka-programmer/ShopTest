@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/page_one_graph"
+    app:startDestination="@id/pageOneFragment">
+
+    <fragment
+        android:id="@+id/pageOneFragment"
+        android:name="com.example.onlineshopsatria.ui.pageone.PageOneFragment"
+        android:label="fragment_page_one"
+        tools:layout="@layout/fragment_page_one" />
+</navigation>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <padding android:bottom="5dp" android:left="12dp" android:right="12dp" android:top="5dp"/>
+                    <solid android:color="@color/white"/>
+                    <size android:width="20dp" android:height="20dp"/>
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="oval" android:innerRadius="6dp">
+                    <solid android:color="@color/navbar_icon_back_is_active"/>
+                </shape>
+            </item>
+        </layer-list>
+
+    </item>
+
+</selector>

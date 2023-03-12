@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/mainnn"
+    android:layout_height="225dp"
+    android:layout_width="175dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="6dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/imageBack"
+            android:layout_width="match_parent"
+            android:src="@color/hint_color"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageAvatar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/user_placeholder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvDiscont"
+            android:layout_width="45dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/back_of_sale"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="30% off"
+            tools:ignore="SmallSp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="7dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:background="@drawable/category_back"
+                android:fontFamily="@font/poppins_semibold"
+                android:id="@+id/tvType"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:paddingEnd="6dp"
+                android:layout_marginBottom="6dp"
+                android:paddingStart="6dp"
+                android:paddingTop="1dp"
+                android:textColor="@color/category_item_color"
+                android:textSize="10sp"
+                tools:ignore="SmallSp"
+                tools:text="Phones" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvNameOfItem"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins_semibold"
+                android:maxWidth="90dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                tools:ignore="SmallSp"
+                tools:text="Samsung S10" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvPriceOfItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                tools:ignore="SmallSp"
+                tools:text="$ 180,000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="7dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btToFavorite"
+                android:layout_width="28dp"
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:layout_marginEnd="4dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_to_favorite_with_back"
+                android:focusable="true" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btAdd"
+                android:layout_width="35dp"
+                android:clickable="true"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_add_solid"
+                android:focusable="true" />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
+
